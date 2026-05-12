@@ -1,0 +1,35 @@
+{
+  "name": "solid-backend",
+  "version": "1.0.0",
+  "description": "Gympass style app.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamboGj/gympass-similar-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RamboGj/gympass-similar-backend/issues"
+  },
+  "homepage": "https://github.com/RamboGj/gympass-similar-backend#readme",
+  "devDependencies": {
+    "@types/node": "25.7.0",
+    "tsup": "8.5.1",
+    "tsx": "4.21.0",
+    "typescript": "6.0.3",
+    "@biomejs/biome": "2.4.15"
+  },
+  "dependencies": {
+    "dotenv": "17.4.2",
+    "fastify": "5.8.5",
+    "zod": "4.4.3"
+  }
+}
