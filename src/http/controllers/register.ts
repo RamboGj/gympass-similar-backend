@@ -25,8 +25,8 @@ export async function register(request: FastifyRequest, reply: FastifyReply) {
                 message: err.message
             })
         }
-        // TODO: Better handling for general error status
-        return reply.status(500)
+
+        throw err
     }
 
     return reply.status(201).send()
